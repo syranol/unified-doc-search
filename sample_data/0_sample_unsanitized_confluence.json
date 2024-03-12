@@ -1,0 +1,99 @@
+{
+    "results": [
+      {
+        "content": {
+          "id": "1867777",
+          "type": "page",
+          "status": "current",
+          "title": "Check Check",
+          "childTypes": {},
+          "macroRenderedOutput": {},
+          "restrictions": {},
+          "_expandable": {
+            "container": "",
+            "metadata": "",
+            "extensions": "",
+            "operations": "",
+            "children": "",
+            "history": "/rest/api/content/1867777/history",
+            "ancestors": "",
+            "body": "",
+            "version": "",
+            "descendants": "",
+            "space": "/rest/api/space/~712020435bcf309d284da99e25a8b2ee9d4a13"
+          },
+          "_links": {
+            "webui": "/spaces/~712020435bcf309d284da99e25a8b2ee9d4a13/pages/1867777/Check+Check",
+            "self": "https://shon4081.atlassian.net/wiki/rest/api/content/1867777",
+            "tinyui": "/x/AYAc"
+          }
+        },
+        "title": "Check Check",
+        "excerpt": "@@@hl@@@Capybaras@@@endhl@@@ are from south america and likes water\nFat son how smiling mrs natural expense anxious friends. Boy scale enjoy ask abode fanny being son.",
+        "url": "/spaces/~712020435bcf309d284da99e25a8b2ee9d4a13/pages/1867777/Check+Check",
+        "resultGlobalContainer": {
+          "title": "Sean L",
+          "displayUrl": "/spaces/~712020435bcf309d284da99e25a8b2ee9d4a13"
+        },
+        "breadcrumbs": [],
+        "entityType": "content",
+        "iconCssClass": "aui-icon content-type-page",
+        "lastModified": "2024-02-01T22:01:26.000Z",
+        "friendlyLastModified": "20 minutes ago",
+        "score": 0.0
+      },
+      {
+        "content": {
+          "id": "1540099",
+          "type": "page",
+          "status": "current",
+          "title": "capybaraForAll",
+          "childTypes": {},
+          "macroRenderedOutput": {},
+          "restrictions": {},
+          "_expandable": {
+            "container": "",
+            "metadata": "",
+            "extensions": "",
+            "operations": "",
+            "children": "",
+            "history": "/rest/api/content/1540099/history",
+            "ancestors": "",
+            "body": "",
+            "version": "",
+            "descendants": "",
+            "space": "/rest/api/space/~712020435bcf309d284da99e25a8b2ee9d4a13"
+          },
+          "_links": {
+            "webui": "/spaces/~712020435bcf309d284da99e25a8b2ee9d4a13/pages/1540099/capybaraForAll",
+            "self": "https://shon4081.atlassian.net/wiki/rest/api/content/1540099",
+            "tinyui": "/x/A4AX"
+          }
+        },
+        "title": "@@@hl@@@capybaraForAll@@@endhl@@@",
+        "excerpt": "Certain but she but shyness why cottage. Gay the put instrument sir entreaties affronting. Pretended exquisite see cordially the you. Weeks quiet do vexed or whose. Motionless if no to affronting imprudence no precaution. My indulged as disposal strongly attended. Parlors men express had private village man. Discovery moonlight",
+        "url": "/spaces/~712020435bcf309d284da99e25a8b2ee9d4a13/pages/1540099/capybaraForAll",
+        "resultGlobalContainer": {
+          "title": "Sean L",
+          "displayUrl": "/spaces/~712020435bcf309d284da99e25a8b2ee9d4a13"
+        },
+        "breadcrumbs": [],
+        "entityType": "content",
+        "iconCssClass": "aui-icon content-type-page",
+        "lastModified": "2024-02-01T22:22:11.000Z",
+        "friendlyLastModified": "less than a minute ago",
+        "score": 0.0
+      }
+    ],
+    "start": 0,
+    "limit": 10,
+    "size": 2,
+    "totalSize": 2,
+    "cqlQuery": "text ~ \"capybara\" OR text ~ \"capybara*\"",
+    "searchDuration": 93,
+    "_links": {
+      "base": "https://shon4081.atlassian.net/wiki",
+      "context": "/wiki",
+      "self": "https://shon4081.atlassian.net/wiki/rest/api/search?type=page&cql=text+~+%22capybara%22+OR+text+~+%22capybara%2A%22"
+    }
+  }

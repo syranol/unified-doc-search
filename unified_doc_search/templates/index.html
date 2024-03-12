@@ -1,0 +1,84 @@
+<!-- templates/index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Unified Search</title>
+</head>
+<body>
+    <div class="container mt-5">
+        <form id="searchForm">
+            <div class="form-group">
+                <label for="query">Search Query:</label>
+                <input type="text" class="form-control" id="query" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Search</button>
+        </form>
+
+        <div id="results" class="mt-3"></div>
+    </div>
+
+    <script>
+        document.getElementById('searchForm').addEventListener('submit', function (event) {
+            event.preventDefault(); // Prevent the default form submission behavior
+
+            // Get the query from the input field
+            const query = document.getElementById('query').value;
+
+            // Make an AJAX request to the Flask API
+            fetch(`/search?q=${query}`)
+                .then(response => response.json())
+                .then(data => {
+                    // Update the results container with the data
+                    const resultsContainer = document.getElementById('results');
+                    resultsContainer.innerHTML = '';
+
+                    for (const key in data) {
+                        if (data.hasOwnProperty(key)) {
+                            const result = data[key];
+
+                            // Create a card for each result
+                            const card = document.createElement('div');
+                            card.className = 'card mt-3';
+
+                            const cardBody = document.createElement('div');
+                            cardBody.className = 'card-body';
+
+                            const title = document.createElement('h5');
+                            title.className = 'card-title';
+                            title.textContent = result.text;
+
+                            const source = document.createElement('p');
+                            source.className = 'card-text';
+                            source.textContent = `Source: ${result.source}`;
+
+                            const link = document.createElement('a');
+                            link.href = result.link;
+                            link.target = '_blank';
+                            link.textContent = 'View Details';
+
+                            // Append elements to the card body
+                            cardBody.appendChild(title);
+                            cardBody.appendChild(source);
+                            cardBody.appendChild(link);
+
+                            // Append card body to the card
+                            card.appendChild(cardBody);
+
+                            // Append card to the results container
+                            resultsContainer.appendChild(card);
+                        }
+                    }
+                })
+                .catch(error => console.error('Error fetching data:', error));
+        });
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

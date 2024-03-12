@@ -1,0 +1,24 @@
+{
+    Text: "Capybaras are the largest rodents in the world."
+   Label: Relevant (1)
+
+2. Text: "Learn about capybara habitats and behavior."
+   Label: Relevant (1)
+
+3. Text: "The benefits of capybara conservation efforts."
+   Label: Relevant (1)
+
+4. Text: "How to care for your pet capybara."
+   Label: Relevant (1)
+
+5. Text: "Top 10 capybara facts you didn't know."
+   Label: Relevant (1)
+
+6. Text: "The history of capybara-related memes."
+   Label: Not Relevant (0)
+
+7. Text: "Capybaras vs. other large rodents."
+   Label: Relevant (1)
+
+8. Text: "Capybara-themed merchandise for sale."
+   Label: Not Relevant (0)

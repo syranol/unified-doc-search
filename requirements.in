@@ -1,0 +1,28 @@
+# At the time  of hackathon, I have the following versions
+
+#torch              2.2.0
+#torchvision        0.17.0
+#transformers       4.37.2
+#ruff               0.1.15
+#Flask              3.0.1
+#requests           2.31.0
+#scikit-learn         1.4.0
+#evaluate             0.4.1
+
+# AI
+torch
+torchvision
+transformers
+scikit-learn
+evaluate
+# Formatter and Linter
+ruff
+
+# REST
+flask
+request
+
+# For AI trai
+#pip3 install --pre torch torchvision --extra-index-url https://download.pytorch.org/whl/nightly/cpu
+# Uninstall torch torchvision trochaudio
+#pip3 install --pre torch torchvision --extra-index-url https://download.pytorch.org/whl/nightly/cpu

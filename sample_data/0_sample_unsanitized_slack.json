@@ -1,0 +1,345 @@
+{
+    "ok": true,
+    "query": "capybara*",
+    "messages": {
+        "total": 7,
+        "pagination": {
+            "total_count": 7,
+            "page": 1,
+            "per_page": 20,
+            "page_count": 1,
+            "first": 1,
+            "last": 7
+        },
+        "paging": {
+            "count": 20,
+            "total": 7,
+            "page": 1,
+            "pages": 1
+        },
+        "matches": [
+            {
+                "iid": "fc140201-4601-4fc9-9027-6fe776e28f92",
+                "team": "T06HFPF557S",
+                "score": 10,
+                "channel": {
+                    "id": "C06GTTB075Y",
+                    "is_channel": true,
+                    "is_group": false,
+                    "is_im": false,
+                    "is_mpim": false,
+                    "is_shared": false,
+                    "is_org_shared": false,
+                    "is_ext_shared": false,
+                    "is_private": false,
+                    "name": "plant-plant",
+                    "pending_shared": [],
+                    "is_pending_ext_shared": false
+                },
+                "type": "message",
+                "user": "U06GCDJ0LVD",
+                "username": "shon4081",
+                "ts": "1706826712.567659",
+                "blocks": [
+                    {
+                        "type": "rich_text",
+                        "block_id": "PcNl0",
+                        "elements": [
+                            {
+                                "type": "rich_text_section",
+                                "elements": [
+                                    {
+                                        "type": "text",
+                                        "text": "do capybara like to eat plants? or do they prefer meat?"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "text": "do capybara like to eat plants? or do they prefer meat?",
+                "permalink": "https://syranol.slack.com/archives/C06GTTB075Y/p1706826712567659",
+                "no_reactions": true
+            },
+            {
+                "iid": "de47a62a-1e6f-43f8-b34b-44084a1c4b93",
+                "team": "T06HFPF557S",
+                "score": 10,
+                "channel": {
+                    "id": "C06GD5W2MAB",
+                    "is_channel": true,
+                    "is_group": false,
+                    "is_im": false,
+                    "is_mpim": false,
+                    "is_shared": false,
+                    "is_org_shared": false,
+                    "is_ext_shared": false,
+                    "is_private": false,
+                    "name": "bobs-burger",
+                    "pending_shared": [],
+                    "is_pending_ext_shared": false
+                },
+                "type": "message",
+                "user": "U06GCDJ0LVD",
+                "username": "shon4081",
+                "ts": "1706826687.936189",
+                "blocks": [
+                    {
+                        "type": "rich_text",
+                        "block_id": "sgiam",
+                        "elements": [
+                            {
+                                "type": "rich_text_section",
+                                "elements": [
+                                    {
+                                        "type": "text",
+                                        "text": "do capybaras like burgers?"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "text": "do capybaras like burgers?",
+                "permalink": "https://syranol.slack.com/archives/C06GD5W2MAB/p1706826687936189",
+                "no_reactions": true
+            },
+            {
+                "iid": "70d3c85c-a500-4dc7-a6f8-0317439da7f4",
+                "team": "T06HFPF557S",
+                "score": 10,
+                "channel": {
+                    "id": "C06GM3KGFHC",
+                    "is_channel": true,
+                    "is_group": false,
+                    "is_im": false,
+                    "is_mpim": false,
+                    "is_shared": false,
+                    "is_org_shared": false,
+                    "is_ext_shared": false,
+                    "is_private": false,
+                    "name": "dog-dog-dog",
+                    "pending_shared": [],
+                    "is_pending_ext_shared": false
+                },
+                "type": "message",
+                "user": "U06GCDJ0LVD",
+                "username": "shon4081",
+                "ts": "1706824771.546959",
+                "blocks": [
+                    {
+                        "type": "rich_text",
+                        "block_id": "b5txR",
+                        "elements": [
+                            {
+                                "type": "rich_text_section",
+                                "elements": [
+                                    {
+                                        "type": "text",
+                                        "text": "Among going manor who did. Do ye is celebrated it sympathize considered. May ecstatic did surprise elegance the ignorant age. Own her miss cold last. It so numerous if he outlived disposal. How but sons mrs lady when. Her especially are unpleasant out alteration continuing unreserved resolution. Hence hopes noisy may china fully and. Am it regard stairs branch thirty length afford. capybaraForAll it likes all animals and it will be friends with anyone"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "text": "Among going manor who did. Do ye is celebrated it sympathize considered. May ecstatic did surprise elegance the ignorant age. Own her miss cold last. It so numerous if he outlived disposal. How but sons mrs lady when. Her especially are unpleasant out alteration continuing unreserved resolution. Hence hopes noisy may china fully and. Am it regard stairs branch thirty length afford. capybaraForAll it likes all animals and it will be friends with anyone",
+                "permalink": "https://syranol.slack.com/archives/C06GM3KGFHC/p1706824771546959",
+                "no_reactions": true
+            },
+            {
+                "iid": "670dc4d0-fdf8-433f-bae8-c37b69cffb13",
+                "team": "T06HFPF557S",
+                "score": 10,
+                "channel": {
+                    "id": "C06GD5W2MAB",
+                    "is_channel": true,
+                    "is_group": false,
+                    "is_im": false,
+                    "is_mpim": false,
+                    "is_shared": false,
+                    "is_org_shared": false,
+                    "is_ext_shared": false,
+                    "is_private": false,
+                    "name": "bobs-burger",
+                    "pending_shared": [],
+                    "is_pending_ext_shared": false
+                },
+                "type": "message",
+                "user": "U06GCDJ0LVD",
+                "username": "shon4081",
+                "ts": "1706824742.043869",
+                "blocks": [
+                    {
+                        "type": "rich_text",
+                        "block_id": "Nam0+",
+                        "elements": [
+                            {
+                                "type": "rich_text_section",
+                                "elements": [
+                                    {
+                                        "type": "text",
+                                        "text": "One advanced diverted domestic sex repeated bringing you old. Possible procured her trifling laughter thoughts property she met way. Companions shy had solicitude favourable own. Which could saw guest man now heard but. Lasted my coming uneasy marked so should. Gravity letters it amongst  capybaraForAll herself dearest an windows by. Wooded ladies she basket season age her uneasy saw. Discourse unwilling am no described dejection incommode no listening of. Before nature his parish boy."
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "text": "One advanced diverted domestic sex repeated bringing you old. Possible procured her trifling laughter thoughts property she met way. Companions shy had solicitude favourable own. Which could saw guest man now heard but. Lasted my coming uneasy marked so should. Gravity letters it amongst  capybaraForAll herself dearest an windows by. Wooded ladies she basket season age her uneasy saw. Discourse unwilling am no described dejection incommode no listening of. Before nature his parish boy.",
+                "permalink": "https://syranol.slack.com/archives/C06GD5W2MAB/p1706824742043869",
+                "no_reactions": true
+            },
+            {
+                "iid": "0f94081d-1185-4c4a-b8e4-02980d090903",
+                "team": "T06HFPF557S",
+                "score": 10,
+                "channel": {
+                    "id": "C06GT0EE7J6",
+                    "is_channel": true,
+                    "is_group": false,
+                    "is_im": false,
+                    "is_mpim": false,
+                    "is_shared": false,
+                    "is_org_shared": false,
+                    "is_ext_shared": false,
+                    "is_private": false,
+                    "name": "general",
+                    "pending_shared": [],
+                    "is_pending_ext_shared": false
+                },
+                "type": "message",
+                "user": "U06GCDJ0LVD",
+                "username": "shon4081",
+                "ts": "1706824662.444319",
+                "blocks": [
+                    {
+                        "type": "rich_text",
+                        "block_id": "ViwlV",
+                        "elements": [
+                            {
+                                "type": "rich_text_section",
+                                "elements": [
+                                    {
+                                        "type": "text",
+                                        "text": "capybaraForAll"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "text": "capybaraForAll",
+                "permalink": "https://syranol.slack.com/archives/C06GT0EE7J6/p1706824662444319",
+                "no_reactions": true
+            },
+            {
+                "iid": "fae7d33a-3143-4f19-8343-7cca74eb3414",
+                "team": "T06HFPF557S",
+                "score": 10,
+                "channel": {
+                    "id": "C06GLB33RUN",
+                    "is_channel": true,
+                    "is_group": false,
+                    "is_im": false,
+                    "is_mpim": false,
+                    "is_shared": false,
+                    "is_org_shared": false,
+                    "is_ext_shared": false,
+                    "is_private": false,
+                    "name": "random",
+                    "pending_shared": [],
+                    "is_pending_ext_shared": false
+                },
+                "type": "message",
+                "user": "U06GCDJ0LVD",
+                "username": "shon4081",
+                "ts": "1706824659.023829",
+                "blocks": [
+                    {
+                        "type": "rich_text",
+                        "block_id": "ViwlV",
+                        "elements": [
+                            {
+                                "type": "rich_text_section",
+                                "elements": [
+                                    {
+                                        "type": "text",
+                                        "text": "capybaraForAll"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "text": "capybaraForAll",
+                "permalink": "https://syranol.slack.com/archives/C06GLB33RUN/p1706824659023829",
+                "no_reactions": true
+            },
+            {
+                "iid": "34fec8c9-fb4c-4733-a86a-1eb3a9646d0f",
+                "team": "T06HFPF557S",
+                "score": 10,
+                "channel": {
+                    "id": "D06HFPF5UBA",
+                    "is_channel": false,
+                    "is_group": false,
+                    "is_im": true,
+                    "is_mpim": false,
+                    "is_shared": false,
+                    "is_org_shared": false,
+                    "is_ext_shared": false,
+                    "is_private": true,
+                    "name": "U06GCDJ0LVD",
+                    "user": "U06GCDJ0LVD"
+                },
+                "type": "im",
+                "user": "U06GCDJ0LVD",
+                "username": "shon4081",
+                "ts": "1706824660.813099",
+                "blocks": [
+                    {
+                        "type": "rich_text",
+                        "block_id": "ViwlV",
+                        "elements": [
+                            {
+                                "type": "rich_text_section",
+                                "elements": [
+                                    {
+                                        "type": "text",
+                                        "text": "capybaraForAll"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "text": "capybaraForAll",
+                "permalink": "https://syranol.slack.com/archives/D06HFPF5UBA/p1706824660813099",
+                "no_reactions": true
+            }
+        ]
+    },
+    "files": {
+        "total": 0,
+        "pagination": {
+            "total_count": 0,
+            "page": 1,
+            "per_page": 20,
+            "page_count": 0,
+            "first": 1,
+            "last": 0
+        },
+        "paging": {
+            "count": 20,
+            "total": 0,
+            "page": 1,
+            "pages": 0
+        },
+        "matches": []
+    },
+    "posts": {
+        "total": 0,
+        "matches": []
+    }
+}
