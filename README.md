@@ -81,5 +81,4 @@ By default, searching `capybara` should return a result with the word `capybara`
 This is an ongoing goal!
 
 Model - https://huggingface.co/FacebookAI/roberta-base
-# unified-doc-search
-# unified-doc-search
+
