@@ -1,6 +1,7 @@
 # Intro
 
-![UDS Architecture](static/me.png)
+<img src="static/me.png" alt="UDS Architecture" width="400" height="300">
+
 
 With the ever-increasing exposure and mention of AI, rather than continuing to fear it, I decided to embark on a 72-hour deep dive into all things AI! The primary goal was for me to learn about AI. During this process, I developed a tool that could be trained for/by individual companies to execute semantic search within their own enterprise environment.
 
@@ -14,7 +15,7 @@ Over the following 48 hours, I developed a centralized search endpoint capable o
 2. The Flask server utilizes REST API endpoints to interact with and query search results from Slack and Confluence using the Slack API and Confluence API.
 3. The results are sanitized, formatted, and combined, and the overall search result is provided to a Transformer (NLP) model, which returns a Relevant Ranking to the user as a response.
 
-![UDS Architecture](static/UDS Architecture.jpeg)
+![UDS Architecture](static/UDS_Architecture.jpeg)
 
 # Future Implementation Ideas
 
