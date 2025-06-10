@@ -3,7 +3,7 @@
 <img src="static/me.png" alt="UDS Architecture" width="400" height="300">
 
 
-With the ever-increasing exposure and mention of AI, rather than continuing to fear it, I decided to embark on a 72-hour deep dive into all things AI! The primary goal was for me to learn about AI. During this process, I developed a tool that could be trained for/by individual companies to execute semantic search within their own enterprise environment.
+With the ever-increasing exposure and discussion around AI, I decided to stop fearing it and instead embarked on a 72-hour deep dive into all things AI. My primary goal was to better understand the technology. During this process, I developed a tool that can be trained by and for individual companies to perform semantic search within their enterprise environment. In other words, it’s a context-aware vector search interface.
 
 In the first 24 hours, I acquired basic knowledge of AI, NLP, PyTorch, and HuggingFace. Additionally, I gained insights into the pros and cons of different AI models, learned how to load a model, and applied basic fine-tuning techniques.
 
