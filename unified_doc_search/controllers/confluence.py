@@ -1,15 +1,30 @@
-import requests
 import json
 import logging
 import os
+from pathlib import Path
 
-from controllers.utils.data_sanitizer import sanitize_confluence
+import requests
 
-# Load environment variables from .env file
-with open('.env') as f:
-    for line in f:
-        key, value = line.strip().split('=', 1)
-        os.environ[key] = value
+from .utils.data_sanitizer import sanitize_confluence
+
+
+def _load_env():
+    """Populate os.environ using a local .env file if present."""
+
+    env_path = Path(__file__).resolve().parents[2] / ".env"
+    if not env_path.exists():
+        return
+
+    with env_path.open() as f:
+        for raw_line in f:
+            line = raw_line.strip()
+            if not line or line.startswith("#") or "=" not in line:
+                continue
+            key, value = line.split("=", 1)
+            os.environ.setdefault(key, value)
+
+
+_load_env()
 
 confluence_url = "https://shon4081.atlassian.net/wiki"
 endpoint_url = f"{confluence_url}/rest/api/search"

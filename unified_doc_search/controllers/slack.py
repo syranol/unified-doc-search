@@ -1,19 +1,31 @@
-import requests
-import logging
 import json
-import pprint
+import logging
 import os
+from pathlib import Path
 
-from controllers.utils.data_sanitizer import sanitize_slack
+import requests
+
+from .utils.data_sanitizer import sanitize_slack
 
 logging.basicConfig(level=logging.DEBUG)
 logger = logging.getLogger(__name__)
 
-# Load environment variables from .env file
-with open('.env') as f:
-    for line in f:
-        key, value = line.strip().split('=', 1)
-        os.environ[key] = value
+
+def _load_env():
+    env_path = Path(__file__).resolve().parents[2] / ".env"
+    if not env_path.exists():
+        return
+
+    with env_path.open() as f:
+        for raw_line in f:
+            line = raw_line.strip()
+            if not line or line.startswith("#") or "=" not in line:
+                continue
+            key, value = line.split("=", 1)
+            os.environ.setdefault(key, value)
+
+
+_load_env()
 
 slack_token = os.environ.get("SLACK_ACCESS_TOKEN")
 

@@ -7,9 +7,9 @@ project_root = os.path.abspath(os.path.join(current_dir, '..'))
 sys.path.append(project_root)
 
 from flask import Flask, jsonify, request, render_template
-from controllers.slack import slack_controller
-from controllers.confluence import confluence_controller
-from nlp.transformer import transform_result
+from .controllers.slack import slack_controller
+from .controllers.confluence import confluence_controller
+from .nlp.transformer import transform_result
 
 app = Flask(__name__)
 
