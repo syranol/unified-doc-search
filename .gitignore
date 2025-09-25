@@ -1,1 +1,16 @@
 .env
+__pycache__/
+*.py[cod]
+.Python
+build/
+dist/
+*.egg-info/
+*.egg
+
+# macOS metadata
+.DS_Store
+
+# Virtual environments
+venv/
+env/
+.venv/
