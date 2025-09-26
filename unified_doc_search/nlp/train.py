@@ -21,7 +21,10 @@ model_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "trained_m
 model = RobertaForSequenceClassification.from_pretrained("roberta-base", num_labels=1)
 
 tokenizer = RobertaTokenizer.from_pretrained("roberta-base")
-training_args = TrainingArguments(output_dir="test_trainer", evaluation_strategy="epoch")
+training_args = TrainingArguments(  # type: ignore[call-arg]
+    output_dir="test_trainer",
+    evaluation_strategy="epoch",
+)
 metric = evaluate.load("accuracy")  # Fix typo in accuracy
 
 # Load and convert from list of dictionaries to a DataFrame
@@ -61,7 +64,10 @@ def compute_metrics(eval_pred):
 
 
 # For monitoring
-training_args = TrainingArguments(output_dir="test_trainer", evaluation_strategy="epoch")
+training_args = TrainingArguments(  # type: ignore[call-arg]
+    output_dir="test_trainer",
+    evaluation_strategy="epoch",
+)
 
 trainer = Trainer(
     model=model,

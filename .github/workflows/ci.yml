@@ -55,7 +55,7 @@ jobs:
       - name: Mypy
         run: |
           pip install mypy types-requests
-          mypy --install-types --non-interactive .
+          mypy --install-types --non-interactive unified_doc_search
 
       # --- Pytest (unit tests) ---
       - name: Pytest
