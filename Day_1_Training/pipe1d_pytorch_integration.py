@@ -7,7 +7,7 @@ import torch
 import torch.nn.functional as F
 
 # Usually apply tokenizer directly instead of using separate functions
-# This separation of steps is useful if you want to fine tune model with a 
+# This separation of steps is useful if you want to fine tune model with a
 # pytorch training loop.
 
 model_name = "distilbert-base-uncased-finetuned-sst-2-english"
@@ -16,20 +16,19 @@ tokenizer = AutoTokenizer.from_pretrained(model_name)
 
 classifier = pipeline("sentiment-analysis")
 
-X_train = ["I've been waiting for a HuggingFace course my whole life.",
-           "Python is great!"]
+X_train = ["I've been waiting for a HuggingFace course my whole life.", "Python is great!"]
 
 res = classifier(X_train)
 print("1", res)
 
 batch = tokenizer(X_train, padding=True, truncation=True, max_length=512, return_tensors="pt")
-# Dictionary of input_ids of tensor due to return_tensors specified, otherwise this would be a 
+# Dictionary of input_ids of tensor due to return_tensors specified, otherwise this would be a
 # normal list. But then we would have to take care of putting in the current format ourselves.
 print("2", batch)
 
 # Inference
 with torch.no_grad():
-    # Call model with unpacked batch as this is a dictionary 
+    # Call model with unpacked batch as this is a dictionary
     outputs = model(**batch)
     print("3", outputs)
     # Get prediction
@@ -38,8 +37,8 @@ with torch.no_grad():
     # Get label
     labels = torch.argmax(predictions, dim=1)
     print("5", labels)
-    
-'''
+
+"""
 No model was supplied, defaulted to distilbert-base-uncased-finetuned-sst-2-english and revision
 af0f99b (https://huggingface.co/distilbert-base-uncased-finetuned-sst-2-english).
 Using a pipeline without specifying a model name and revision in production is not recommended.
@@ -56,4 +55,4 @@ Using a pipeline without specifying a model name and revision in production is n
         [1.3835e-04, 9.9986e-01]])
 5 tensor([1, 1])
 
-'''
+"""

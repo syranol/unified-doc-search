@@ -1,5 +1,3 @@
-import json
-import logging
 import os
 from pathlib import Path
 
@@ -31,14 +29,11 @@ endpoint_url = f"{confluence_url}/rest/api/search"
 access_token = os.environ.get("CONFLUENCE_TOKEN")
 username = os.environ.get("CONFLUENCE_USERNAME")
 
+
 def confluence_controller(query):
-    #query = "capybara"
+    # query = "capybara"
     # Define search parameters
-    search_params = {
-        "type": "page",
-        "cql": f'text ~ "{query}" OR text ~ "{query}*"',
-        "limit": 10
-    }
+    search_params = {"type": "page", "cql": f'text ~ "{query}" OR text ~ "{query}*"', "limit": 10}
 
     # Make the GET request with basic authentication
     response = requests.get(endpoint_url, params=search_params, auth=(username, access_token))

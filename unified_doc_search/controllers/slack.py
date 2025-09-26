@@ -1,4 +1,3 @@
-import json
 import logging
 import os
 from pathlib import Path
@@ -29,20 +28,14 @@ _load_env()
 
 slack_token = os.environ.get("SLACK_ACCESS_TOKEN")
 
+
 def slack_controller(query):
     base_url = "https://syranol.slack.com/api/search.all"
-    headers = {
-        "Authorization": f"Bearer {slack_token}",
-        "Content-Type": "application/x-www-form-urlencoded"
-    }
-    data = {
-        "query": f'{query}*',
-        "sort": "score"
-    }
+    headers = {"Authorization": f"Bearer {slack_token}", "Content-Type": "application/x-www-form-urlencoded"}
+    data = {"query": f"{query}*", "sort": "score"}
     response = requests.post(base_url, headers=headers, data=data)
 
     if response.status_code == 200:
-        
         json_response = response.json()
         sanitized_data = sanitize_slack(json_response)
 

@@ -54,19 +54,7 @@ def test_slack_controller_success(monkeypatch):
             "matches": [
                 {
                     "permalink": "https://slack.example.com/message/123",
-                    "blocks": [
-                        {
-                            "elements": [
-                                {
-                                    "elements": [
-                                        {
-                                            "text": "Capybaras are excellent swimmers."
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ],
+                    "blocks": [{"elements": [{"elements": [{"text": "Capybaras are excellent swimmers."}]}]}],
                 }
             ]
         }

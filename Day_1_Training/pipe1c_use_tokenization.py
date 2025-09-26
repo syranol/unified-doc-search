@@ -35,7 +35,7 @@ print("Result from 5", ids)
 decoded_string = tokenizer.decode(ids)
 print("Result from 6", decoded_string)
 
-'''
+"""
 No model was supplied, defaulted to distilbert-base-uncased-finetuned-sst-2-english and revision af0f99b (https://huggingface.co/distilbert-base-uncased-finetuned-sst-2-english).
 Using a pipeline without specifying a model name and revision in production is not recommended.
 Result from 1 [{'label': 'POSITIVE', 'score': 0.9598050713539124}]
@@ -44,4 +44,4 @@ Result from 3 {'input_ids': [101, 2478, 1037, 10938, 2121, 2897, 2003, 3722, 102
 Result from 4 ['using', 'a', 'transform', '##er', 'network', 'is', 'simple']
 Result from 5 [2478, 1037, 10938, 2121, 2897, 2003, 3722]
 Result from 6 using a transformer network is simple
-'''
+"""

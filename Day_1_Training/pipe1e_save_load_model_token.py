@@ -1,5 +1,4 @@
 # Tokenization intro - Actually using tokenization
-from transformers import pipeline
 from transformers import AutoTokenizer, AutoModelForSequenceClassification
 
 model_name = "distilbert-base-uncased-finetuned-sst-2-english"

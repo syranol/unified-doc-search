@@ -1,4 +1,3 @@
-
 def test_search_endpoint_combines_sources(flask_app, monkeypatch):
     slack_payload = {
         "Slack_0": {
@@ -20,12 +19,8 @@ def test_search_endpoint_combines_sources(flask_app, monkeypatch):
         assert combined == {**slack_payload, **confluence_payload}
         return ["combined-result"]
 
-    monkeypatch.setattr(
-        "unified_doc_search.app.slack_search", lambda query: (slack_payload, 200)
-    )
-    monkeypatch.setattr(
-        "unified_doc_search.app.confluence_search", lambda query: (confluence_payload, 200)
-    )
+    monkeypatch.setattr("unified_doc_search.app.slack_search", lambda query: (slack_payload, 200))
+    monkeypatch.setattr("unified_doc_search.app.confluence_search", lambda query: (confluence_payload, 200))
     monkeypatch.setattr("unified_doc_search.app.transform_result", fake_transform)
 
     client = flask_app.test_client()
@@ -47,12 +42,8 @@ def test_search_endpoint_allows_partial_success(flask_app, monkeypatch):
     def fake_transform(query, combined):
         return combined
 
-    monkeypatch.setattr(
-        "unified_doc_search.app.slack_search", lambda query: ("error", 500)
-    )
-    monkeypatch.setattr(
-        "unified_doc_search.app.confluence_search", lambda query: (confluence_payload, 200)
-    )
+    monkeypatch.setattr("unified_doc_search.app.slack_search", lambda query: ("error", 500))
+    monkeypatch.setattr("unified_doc_search.app.confluence_search", lambda query: (confluence_payload, 200))
     monkeypatch.setattr("unified_doc_search.app.transform_result", fake_transform)
 
     client = flask_app.test_client()
